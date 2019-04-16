@@ -1,0 +1,97 @@
+/*=================================================
+            Basic widget fields design
+=================================================*/
+.field-heading {
+	text-align: center;
+	color: #fff;
+	background-color: #757474;
+	padding: 5px 0;
+}
+
+/*=================================================
+            Selector section on widget
+=================================================*/
+.widget-content .selector-labels label {
+    display: inline-block;
+    padding: 10px 5px 0;
+    position: relative;
+    max-width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.widget-content .selector-labels label.selector-selected:after {
+    content: "";
+    height: 35px;
+    width: 35px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background: url(../images/selected.png) no-repeat right top;
+}
+
+/*=================================================
+            Media Upload at widget
+=================================================*/
+.widget-content .attachment-media-view{
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+.widget-content .placeholder{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    border: 1px dashed #b4b9be;
+    box-sizing: border-box;
+    padding: 9px 0;
+    line-height: 20px;
+}
+
+.widget-content .actions{
+    margin-top: 8px;
+}
+
+/*=================================================
+            Radio Image Control
+=================================================*/
+.es-meta-options-wrap .ui-button {
+    margin:        0;
+    border-radius: 0;
+    border:        none;
+    background:    transparent;
+    height:        auto;
+    box-shadow:    none;
+}
+
+.es-meta-options-wrap .ui-button-text { padding: 0; }
+
+.es-meta-options-wrap img {
+    box-sizing: border-box;
+    max-width:  100%;
+    height:     auto;
+    padding:    1px;
+    border:     4px solid transparent;
+}
+
+.es-meta-options-wrap img:hover,
+.es-meta-options-wrap img:focus {
+    border-color: #ddd;
+}
+
+.es-meta-options-wrap .ui-state-active img {
+    border-color: #00a0d2;
+}
+
+.es-clearfix:before,
+.es-clearfix:after {
+    content: '';
+    display: table;
+}
+
+.es-clearfix:after {
+    clear: both;
+}

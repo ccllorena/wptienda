@@ -1,0 +1,81 @@
+h2.vision-themes {
+    margin-bottom: 30px !important;
+}
+#vision-install-plugins .plugin {
+	-webkit-box-shadow: 0 1px 1px -1px rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px -1px rgba(0,0,0,.1);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#vision-install-plugins .plugin.col {
+	background-color: #fff;
+	margin-bottom: 4.999999999%;
+}
+#vision-install-plugins .plugin-wrapper {
+	border: 2px solid #dedede;
+	position: relative;
+}
+#vision-install-plugins .plugin .plugin-screenshot {
+	position: relative;
+}
+#vision-install-plugins .plugin .plugin-screenshot img {
+	display: block;
+	border: 0 none;
+	margin: 0 auto;
+	padding-top: 45px;
+}
+#vision-install-plugins .plugin .plugin-screenshot .plugin-info {
+	text-align: center;
+	padding: 40px 0;
+}
+#vision-install-plugins .plugin .plugin-wrapper .plugin-name {
+	font-size: 15px;
+    font-weight: 600;
+    height: 18px;
+	margin: 0;
+    padding: 15px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.1);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: #fff;
+    background: rgba(255,255,255,.65);
+}
+#vision-install-plugins .plugin.active .plugin-wrapper .plugin-name {
+	background: #23282d;
+    color: #fff;
+    padding-right: 110px;
+    font-weight: 300;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+}
+#vision-install-plugins .plugin.active .plugin-wrapper .plugin-name span {
+	font-weight: 600;
+}
+#vision-install-plugins .plugin .plugin-wrapper .plugin-actions {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: opacity .1s ease-in-out;
+    transition: opacity .1s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 38px;
+    padding: 9px 10px 0;
+    background: rgba(244,244,244,.7);
+    border-left: 1px solid rgba(0,0,0,.05);
+}
+#vision-install-plugins .plugin.active .plugin-wrapper .plugin-actions {
+	background: rgba(49,49,49,.7);
+    border-left: none;
+}
+#vision-install-plugins .plugin .plugin-required {
+	background: rgba(213,78,33,.95);
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    top: 85px;
+	left: -2px;
+}

@@ -1,0 +1,272 @@
+@import 'node_modules/susy/sass/susy';
+
+$susy: (
+	columns: 12,
+	gutters: 1,
+	math: fluid,
+	output: float,
+	gutter-position: after,
+
+	use-custom: (
+		box-sizing: false
+	)
+);
+
+@mixin reset() {
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-transform: none;
+	display: inherit;
+	width: auto;
+	font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+	.main-navigation {
+		ul {
+			li.smm-active {
+				position: static;
+
+				&.smm-doing-preview {
+					ul.sub-menu {
+						display: block;
+					}
+				}
+
+				ul.sub-menu {
+					position: absolute;
+					left: 0;
+					width: 100%;
+					z-index: 9999999999;
+					border: 0;
+					top: auto;
+
+					li {
+						display: inline;
+					}
+				}
+
+				.widget {
+					margin-bottom: 3.631em;
+
+					ul:not(.products) {
+						position: static;
+						left: auto;
+						display: block;
+						float: none;
+
+						li {
+							display: list-item;
+							@include reset;
+
+							&:before,
+							&:after {
+								display: none;
+							}
+
+							a {
+								@include reset;
+								display: inline;
+
+								&:after {
+									display: none;
+								}
+
+								&:hover {
+									background-color: transparent;
+								}
+							}
+
+							ul.children {
+								margin-top: 0;
+								margin-left: 1em;
+								font-size: .857em;
+								box-shadow: none;
+							}
+						}
+					}
+
+					h3.widget-title {
+						font-size: 1em;
+						border: 0;
+						padding: 0;
+					}
+
+					table {
+						thead {
+							th {
+								padding: .618em;
+							}
+						}
+
+						td,
+						th {
+							padding: .618em;
+
+							a {
+								@include reset;
+							}
+						}
+					}
+
+					/**
+					 * Tag clouds
+					 */
+					.tagcloud {
+						a {
+							@include reset;
+						}
+					}
+
+					/**
+					 * Product list widgets
+					 */
+					ul.product_list_widget {
+						li {
+							overflow: hidden;
+							zoom: 1;
+							margin-bottom: .618em;
+						}
+					}
+
+					/**
+					 * Product layout
+					 * When product shortcodes are added to the mega menu.
+					 */
+					ul.products {
+						position: static;
+						left: auto;
+						display: block;
+						float: none;
+
+						li {
+							margin: 0;
+							padding: 0;
+							background-color: transparent;
+							margin-bottom: 2.618em;
+
+							&:hover,
+							&:hover a:first-of-type {
+								background-color: transparent;
+							}
+
+							a:first-of-type:hover {
+								background-color: transparent;
+							}
+
+							a {
+								width: auto;
+
+								&:first-of-type {
+									padding: 0;
+								}
+							}
+						}
+					}
+
+					a.button,
+					a.added_to_cart {
+						width: auto;
+						display: inline-block;
+					}
+
+					.columns-1 {
+						ul.products {
+							li.product {
+								width: 100%;
+								margin-right: 0;
+								float: none;
+							}
+						}
+					}
+
+					.columns-2 {
+						ul.products {
+							li.product {
+								@include span(6 of 12);
+							}
+						}
+					}
+
+					.columns-3 {
+						ul.products {
+							li.product {
+								@include span(4 of 12);
+							}
+						}
+					}
+
+					.columns-4 {
+						ul.products {
+							li.product {
+								@include span(3 of 12);
+							}
+						}
+					}
+
+					// The grid wont work for 5 columns :-(
+					.columns-5 {
+						ul.products {
+							li.product {
+								width: 16.9%;
+								margin-right: 3.8%;
+							}
+						}
+					}
+				}
+
+				.smm-row:last-child {
+					> div {
+						.widget:last-of-type {
+							margin-bottom: 0;
+						}
+					}
+				}
+
+				&:hover {
+					a.button,
+					a.added_to_cart {
+						background-color: inherit;
+					}
+				}
+			}
+		}
+	}
+
+	// Grid classes
+	@for $i from 1 through 12 {
+		.smm-span-#{$i} {
+			@include span( $i );
+		}
+
+		.smm-pre-#{$i} {
+			@include pre( $i );
+		}
+
+		.smm-post-#{$i} {
+			@include post( $i );
+		}
+	}
+
+	.smm-last {
+		@include last;
+	}
+
+	.smm-mega-menu {
+		margin-left: -2.618em;
+		margin-right: -2.618em;
+		padding: 2.618em;
+	}
+
+	.smm-row {
+		&:before, &:after {
+			content: "";
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+	}
+}

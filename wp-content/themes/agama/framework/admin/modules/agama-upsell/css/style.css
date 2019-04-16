@@ -1,0 +1,88 @@
+.themevision-upsell {
+	padding: 21px;
+	border-radius: 3px;
+	background: #fff;
+}
+
+.themevision-upsell .upsell-pro-label {
+	margin-right: 10px;
+	padding: 2px 6px 2px 7px;
+	border-radius: 3px;
+	color: #fff;
+	background: #FE6663;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0.1px;
+	text-transform: uppercase;
+}
+
+.themevision-upsell-features li {
+	margin-bottom: 23px;
+	font-size: 14px;
+}
+
+.themevision-upsell-features li:last-child {
+	margin-bottom: 28px;
+}
+
+.themevision-upsell .button {
+	width: 100%;
+	margin-right: 21px;
+	text-align: center;
+	letter-spacing: 0.2px;
+}
+
+.themevision-upsell hr {
+	margin-top: 22px;
+	margin-bottom: 16px;
+}
+
+.themevision-upsell-feature-list li:before {
+	line-height: 37px;
+}
+
+.themevision-upsell-feature-list li {
+	margin-bottom: 6px;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 22px;
+}
+
+.themevision-upsell-feature-list li:last-child {
+	margin-bottom: 0;
+}
+
+.slider-sections-upsell {
+	padding: 10px 10px 11px 14px;
+}
+
+.themevision-boxed-section {
+	margin: 12px;
+}
+
+.upsell-pro-label:before {
+	content: "pro";
+}
+
+#customize-controls .control-section-agama-theme-info .accordion-section-title,
+#customize-controls .control-section-agama-theme-info .accordion-section-title,
+#customize-controls .control-section-agama-theme-info .accordion-section-title:hover,
+#customize-controls .control-section-agama-theme-info .accordion-section-title:focus {
+	background-color: #FE6663;
+    border-left-color: #ff3b37;
+    color: #fff !important;
+    text-transform: uppercase;
+}
+
+.control-section-agama-theme-info .accordion-section-title .button {
+    text-transform: uppercase;
+	margin-top:  -4px;
+	font-weight: 400;
+	margin-left: 8px;
+}
+
+.rtl .control-section-agama-theme-info .accordion-section-title .button {
+    text-transform: uppercase;
+    margin-left:  0;
+    margin-right: 8px;
+}
